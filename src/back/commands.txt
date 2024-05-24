@@ -14,6 +14,6 @@ sqlalchemy.url = mysql+mysqlconnector://root:newpassword0@localhost:3306/the_las
 
 LOOK HERE ↓↓↓↓↓↓↓↓:
 
-/// basically to run everything, u will need only to commands (if everything is installed - only these 2):
+/// basically to run everything, u will need only 2 commands (if everything is installed - only these 2):
 /// env\Scripts\activate.bat
 /// flask run
