@@ -1,0 +1,32 @@
+<div class="sign-up">
+  <div class="container">
+    <form class="signup-form" (ngSubmit)="onSubmit()">
+      <fieldset>
+        <div class="error" *ngIf="error">
+          {{error}}.
+          </div>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" [(ngModel)]="username" name="userName" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="mail" [(ngModel)]="email" name="userEmail" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" [(ngModel)]="password" [type]="passwordFieldType" name="userPassword" required>
+
+        <div class="f-row">
+          <input type="checkbox" id="show-password" (click)="togglePasswordVisibility()" />
+          <label for="show-password">Show password</label>
+        </div>
+
+        <label>Age:</label>
+        <input type="radio" id="under_13" value="0" [(ngModel)]="age" name="userAge"><label for="under_13" class="light">Under 13</label><br>
+        <input type="radio" id="over_13" value="1" [(ngModel)]="age" name="userAge"><label for="over_13" class="light">Over 13</label>
+      </fieldset>
+ 
+      <button type="submit" [disabled]="age === '0'">Sign Up</button>
+      <p class="message">Registered Already? <a (click)="navigate('/login')">Log In</a></p>
+    </form>
+  </div>
+</div>

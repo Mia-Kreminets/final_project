@@ -1,0 +1,20 @@
+<div class="login-page">
+  <div class="form">
+    <form class="login-form" (ngSubmit)="onSubmit()"  #form>
+
+      <div class="error" *ngIf="error">
+      {{error}}.
+      </div>
+
+      <input type="text" placeholder="username" [(ngModel)]="username" name="username" required />
+      <input type="password" placeholder="password" [(ngModel)]="password" [type]="passwordFieldType" name="password" required />
+      <div class="f-row">
+        <input type="checkbox" id="show-password" (click)="togglePasswordVisibility()" />
+        <label for="show-password">Show password</label>
+      </div>
+
+      <button type="submit">Login</button>
+      <p class="message">Not registered? <a (click)="navigate('/signup')">Create an account</a></p>
+    </form>
+  </div>
+</div>

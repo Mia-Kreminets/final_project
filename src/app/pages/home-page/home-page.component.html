@@ -1,0 +1,24 @@
+<div class="main-body">
+  <div class="my-container decode-text">
+    <span class="text-animation" *ngFor="let letter of phrase" [class.space]="letter === ' '">{{ letter }}</span>
+  </div>
+
+  <div id="footer">
+   <p>
+    Proudly made ♥ by Me (S.K.)
+   </p>
+  </div>
+ <p *ngIf="!userInfo?.id">
+  You are not logged in. This is anonymous mode.
+ </p>
+ <p *ngIf="!!userInfo?.id">
+  My service is at your disposal, my friend!
+ </p>
+</div>
+
+<div class="form-container">
+  <detection-form></detection-form>
+</div>
+
+<about-us></about-us>
+<app-footer></app-footer>

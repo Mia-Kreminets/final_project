@@ -1,0 +1,19 @@
+pip show flask
+pip install -r requirements.txt.
+python -m venv env
+python -m pip install flask
+
+cd web-app/src/back
+env\Scripts\activate.bat
+flask run
+set FLASK_ENV=development
+flask run
+alembic revision --autogenerate 
+
+sqlalchemy.url = mysql+mysqlconnector://root:newpassword0@localhost:3306/the_last_drop
+
+LOOK HERE ↓↓↓↓↓↓↓↓:
+
+/// basically to run everything, u will need only to commands (if everything is installed - only these 2):
+/// env\Scripts\activate.bat
+/// flask run

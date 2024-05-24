@@ -1,0 +1,13 @@
+<div class="container">
+  <div id="chart">
+    <p>Your Personal Statistics (Fake data due to a small number of queries in the database)</p>
+    <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [dataLabels]="chartOptions.dataLabels"
+      [plotOptions]="chartOptions.plotOptions" [responsive]="chartOptions.responsive" [xaxis]="chartOptions.xaxis"
+      [legend]="chartOptions.legend" [fill]="chartOptions.fill"></apx-chart>
+
+    <p>General Statistics (Fake data due to a small number of queries in the database)</p>
+    <apx-chart [series]="allUsersChartOptions.series" [chart]="allUsersChartOptions.chart" [dataLabels]="allUsersChartOptions.dataLabels"
+      [plotOptions]="allUsersChartOptions.plotOptions" [responsive]="allUsersChartOptions.responsive" [xaxis]="allUsersChartOptions.xaxis"
+      [legend]="allUsersChartOptions.legend" [fill]="allUsersChartOptions.fill"></apx-chart>
+  </div>
+</div>

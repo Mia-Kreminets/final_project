@@ -1,0 +1,139 @@
+ .sign-up {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-image: url("./../../../assets/images/trees.jpg");
+ }
+
+ .container {
+   width: 50%;
+ }
+
+ div {
+   font-family: 'Nunito', sans-serif;
+   color: #384047;
+ }
+
+ form {
+   margin: 10px auto;
+   padding: 40px;
+   background: #f4f7f8;
+   border-radius: 8px;
+ }
+
+ h1 {
+   margin: 0 0 30px 0;
+   text-align: center;
+ }
+
+ input[type="text"],
+ input[type="password"],
+ input[type="date"],
+ input[type="datetime"],
+ input[type="email"],
+ input[type="number"],
+ input[type="search"],
+ input[type="tel"],
+ input[type="time"],
+ input[type="url"],
+ textarea,
+ select {
+   background: rgba(255, 255, 255, 0.1);
+   border: none;
+   font-size: 16px;
+   height: auto;
+   margin: 0;
+   outline: 0;
+   padding: 15px;
+   width: 95%;
+   background-color: #e8eeef;
+   color: #8a97a0;
+   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+   margin-bottom: 30px;
+ }
+
+ input[type="radio"],
+ input[type="checkbox"] {
+   margin: 0 4px 8px 0;
+ }
+
+ select {
+   padding: 6px;
+   height: 32px;
+   border-radius: 2px;
+ }
+
+ button {
+   font-family: "Roboto", sans-serif;
+   text-transform: uppercase;
+   outline: 0;
+   background: #4CAF50;
+   width: 100%;
+   border: 0;
+   padding: 15px;
+   color: #FFFFFF;
+   font-size: 14px;
+   -webkit-transition: all 0.3 ease;
+   transition: all 0.3 ease;
+   cursor: pointer;
+ }
+
+ fieldset {
+   margin-bottom: 30px;
+   border: none;
+ }
+
+ legend {
+   font-size: 1.4em;
+   margin: 20px 0 10px 0;
+ }
+
+ label {
+   display: block;
+   margin-bottom: 8px;
+ }
+
+ label.light {
+   font-weight: 300;
+   display: inline;
+ }
+
+ .number {
+   background-color: #5fcf80;
+   color: #fff;
+   height: 30px;
+   width: 30px;
+   display: inline-block;
+   font-size: 0.8em;
+   margin-right: 4px;
+   line-height: 30px;
+   text-align: center;
+   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+   border-radius: 100%;
+ }
+
+ .message {
+   margin: 15px 0 0;
+   color: #b3b3b3;
+   font-size: 14px;
+   text-align: center;
+
+   a {
+     color: #4CAF50;
+     text-decoration: none;
+     cursor: pointer;
+   }
+ }
+
+ .error {
+   color: #de5454c2;
+   padding: 14px;
+   font-size: 16px;
+   text-align: center;
+ }
+
+ button:disabled {
+   background: #7a7a7a;
+ }

@@ -1,0 +1,109 @@
+.main-body {
+  text-align: center;
+  margin: 0;
+  background: #EEEEEE;
+}
+
+.white {
+  color: white;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.my-container {
+  position: relative;
+  width: 90%;
+  height: 70vh;
+  background-color: black;
+  background-image: url("./../../../assets/images/trees.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .centered-text {
+    color: white;
+  }
+}
+
+.decode-text {
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+}
+
+.space {
+  display: inline-block;
+  width: 10px;
+}
+
+.text-animation {
+  display: inline-block;
+  position: relative;
+  color: transparent;
+  margin: 0 8px;
+  text-transform: uppercase;
+
+  &:before {
+    content: "";
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #ffffff;
+    width: 0;
+    height: 1.2em;
+    -webkit-transform: translate(-50%, -55%);
+    -ms-transform: translate(-50%, -55%);
+    transform: translate(-50%, -55%);
+  }
+
+  &.state-1 {
+    &:before {
+      width: 1px;
+    }
+  }
+
+  &.state-2 {
+    &:before {
+      width: 0.9em;
+    }
+  }
+
+  &.state-3 {
+    color: rgb(255, 255, 255);
+
+    &:before {
+      width: 0;
+    }
+  }
+}
+
+div {
+  font-family: "Share Tech Mono", monospace;
+}
+
+:host home-page {
+  height: 80vh;
+  align-items: center;
+  display: flex;
+}
+
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+
+  > detection-form {
+    width: 700px;
+    margin: 20px;
+  }
+}

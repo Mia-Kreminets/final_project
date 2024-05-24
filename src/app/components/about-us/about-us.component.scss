@@ -1,0 +1,61 @@
+section {
+  background-color: #f1f1f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px 0 !important;
+}
+
+.about-us {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+
+  h2 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 15px;
+      position: relative;
+      padding-left: 25px;
+
+      &:before {
+        content: '💪';
+
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      &:nth-child(2):before {
+        content: '🍕';
+
+      }
+
+      &:nth-child(3):before {
+        content: '☕';
+      }
+
+      strong {
+        color: #333;
+      }
+    }
+  }
+}
